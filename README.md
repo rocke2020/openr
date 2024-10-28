@@ -64,8 +64,8 @@
 
 <!-- TABLE OF CONTENTS -->
 
-[//]: # (<details>)
-  <summary>Table of Contents</summary>
+<details>
+  <summary><span style="font-size: 1.5em;"><strong>Table of Contents</strong> 📖 </span></summary>
   <ol>
     <li><a href="#news-and-updates">News and Updates</a></li>
     <li><a href="#features">Features</a></li>
@@ -86,12 +86,12 @@
     <li><a href="#reference">Reference</a></li>
   </ol>
 
-[//]: # (</details>)
+</details>
 
 <!-- News and Updates -->
 
 ## News and Updates
-
+- **[24/10/2024]** ***OpenR*** now supports **MCTS** reasoning ([#24](https://github.com/openreasoner/openr/pull/24))! 🌲
 - **[15/10/2024]** Our report is on [**Arxiv**](https://arxiv.org/abs/2410.09671)! 
 - **[12/10/2024]** ***OpenR*** has been released! 🚀 
 
@@ -209,6 +209,7 @@ sh scripts/eval/beam_search.sh
 
 # Method: beam_search. Average result: ({'majority_vote': 0.74, 'total_completion_tokens': 2350.492},)
 
+sh scripts/eval/vanila_mcts.sh
 
 ```
 
@@ -271,6 +272,16 @@ OpenR is released under the MIT License.
 ## Citation
 
 If you do find our resources helpful, please cite our paper:
+
+```
+@misc{wang2024tutorial,
+  author = {Jun Wang},
+  title = {A Tutorial on LLM Reasoning: Relevant Methods Behind ChatGPT o1},
+  year = {2024},
+  url = {https://github.com/openreasoner/openr/blob/main/reports/tutorial.pdf},
+  note = {Available on GitHub}
+}
+```
 
 ```
 @article{wang2024openr,
